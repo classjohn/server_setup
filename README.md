@@ -43,10 +43,3 @@ $ ~/auto-deploy-script/setup.sh
 $ exec $SHELL
 ```
 
-#### 3.3.4. nginx.sh 실행
-
-```console
-$ ~/auto-deploy-script/2.sh [PROJECT-FOLDER-NAME] [DATABASE-PASSWORD]
-```
-
-
