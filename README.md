@@ -32,7 +32,7 @@ $ sudo chmod u+x ~/server_setup/*.sh
 실행 권한이 부여되면 실행을 해보자. 우선 `setup.sh` 먼저.
 
 ```console
-$ ~/auto-deploy-script/setup.sh
+$ ~/server_setup/setup.sh
 ```
 
 #### 2.2.3. shell 새로고침
