@@ -1,4 +1,4 @@
-# Auto Deploy Script
+# Auto Server Setup Script
 
 Shell Script for AWS Lightsail Server Setup. Written By [강동주](https://github.com/biniprc). Inspired By [황준우](https://github.com/capollux)
 
@@ -8,7 +8,7 @@ Shell Script for AWS Lightsail Server Setup. Written By [강동주](https://gith
 
 ## 2. Lightsail 설정 (Server)
 
-### 2.1. Auto Deploy Script 가져오기
+### 2.1. Auto Server Setup Script 가져오기
 
 `git clone` 명령어로 **server_setup**스크립트를 가져온다. 지금 보고 있는 이 문서의 repository이다.
 
@@ -16,8 +16,7 @@ Shell Script for AWS Lightsail Server Setup. Written By [강동주](https://gith
 $ git clone https://github.com/classjohn/server_setup.git
 ```
 
-### 2.2. Auto Deploy Script 실행하기
-
+### 2.2. Rails Install Script 실행하기
 
 #### 2.2.1. Script 실행 권한
 
@@ -43,3 +42,21 @@ $ ~/server_setup/setup.sh
 $ exec $SHELL
 ```
 
+#### 2.2.4. Ruby 설치
+
+`setup.sh`를 통해 우리는 Rails에 필요한 모든 프로그램과 `rbenv`를 설치해주었다. Ruby의 경우 rbenv를 통해 직접 설치해주어야 한다.
+
+```console
+$ rbenv install 2.3.5
+$ rbenv global 2.3.5
+$ gem install bundler
+$ rbenv rehash
+```
+
+#### 2.2.5. Rails 설치
+
+마지막으로 rails까지 설치를 완료하자.
+
+```console
+$ gem install rails -v 4.2.9
+```
