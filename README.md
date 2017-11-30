@@ -63,11 +63,8 @@ $ gem install rails -v 4.2.9
 
 ### 3.1. Nginx & Passenger Install Script 실행하기
 
-`setup.sh`를 통해 우리는 Rails에 필요한 모든 프로그램과 `rbenv`를 설치해주었다. Ruby의 경우 rbenv를 통해 직접 설치해주어야 한다.
+Web Server인 **Nginx**와 Application Server인 **Passenger**를 설치하는 script를 구동하자
 
 ```console
-$ rbenv install 2.3.5
-$ rbenv global 2.3.5
-$ gem install bundler
-$ rbenv rehash
+$ ~/server_setup/nginx.sh
 ```
